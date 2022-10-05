@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "SpaceX Ukraine"
 include ':app'
 include ':core'
+include ':domain'
+include ':data'

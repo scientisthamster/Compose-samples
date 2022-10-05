@@ -37,6 +37,8 @@ object Versions {
     const val kotlin = "1.7.20"
     const val timber = "5.0.1"
     const val coreTesting = "1.1.1"
+    const val kotlinxCoroutines = "1.6.4"
+    const val jodaTime = "2.10.8"
 }
 
 object BuildDependencies {
@@ -71,6 +73,11 @@ object Dependencies {
                 "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
         }
     }
+
+    const val kotlinxCoroutines =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.kotlinxCoroutines}"
+
+    const val jodaTime = "joda-time:joda-time:${Versions.jodaTime}"
 
     object Dagger {
         const val dagger =
@@ -116,6 +123,8 @@ object TestDependencies {
         "commons-codec:commons-codec:${Versions.commonsCodec}"
     const val livedataTesting =
         "com.jraska.livedata:testing-ktx:${Versions.livedataTesting}"
+    const val kotlinxCoroutines =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.kotlinxCoroutines}"
 
     object Mockito {
         const val mockitoCore =
