@@ -23,6 +23,7 @@ object Versions {
     const val constraintLayout = "2.1.4"
     const val legacySupportV4 = "1.0.0"
     const val lifecycleLivedataKtx = "2.5.1"
+    const val livedataTesting = "1.1.1"
     const val materialComponents = "1.6.1"
     const val dagger = "2.44"
     const val androidxTest = "1.4.0"
@@ -113,6 +114,8 @@ object TestDependencies {
     }
     const val commonsCodec =
         "commons-codec:commons-codec:${Versions.commonsCodec}"
+    const val livedataTesting =
+        "com.jraska.livedata:testing-ktx:${Versions.livedataTesting}"
 
     object Mockito {
         const val mockitoCore =
