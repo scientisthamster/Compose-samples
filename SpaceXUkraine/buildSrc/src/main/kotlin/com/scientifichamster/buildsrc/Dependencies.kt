@@ -4,6 +4,8 @@ object ProjectModules {
     const val core = ":core"
     const val navigation = ":navigation"
     const val coreAndroidTest = ":core-android-test"
+    const val domain = ":domain"
+    const val data = ":data"
 }
 
 object AndroidSettings {
@@ -39,10 +41,14 @@ object Versions {
     const val coreTesting = "1.1.1"
     const val kotlinxCoroutines = "1.6.4"
     const val jodaTime = "2.10.8"
+    const val retrofit = "2.9.0"
+    const val retrofitConverterGson = "2.9.0"
+    const val okhttpLoggingInterceptor = "4.10.0"
 }
 
 object BuildDependencies {
-    const val safeArgsPlugin = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}"
+    const val safeArgsPlugin =
+        "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigation}"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
 }
 
@@ -51,6 +57,15 @@ object Dependencies {
 
     const val materialComponents =
         "com.google.android.material:material:${Versions.materialComponents}"
+
+    object Retrofit {
+        const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+        const val retrofitConverterGson =
+            "com.squareup.retrofit2:converter-gson:${Versions.retrofitConverterGson}"
+    }
+
+    const val okHttpLoggingInterceptor =
+        "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLoggingInterceptor}"
 
     object AndroidX {
         const val appCompat =
@@ -113,12 +128,14 @@ object TestDependencies {
         const val coreTesting =
             "android.arch.core:core-testing:${Versions.coreTesting}"
     }
-    object  JUnit{
+
+    object JUnit {
         const val junit =
             "junit:junit:${Versions.junit}"
         const val junitPlatformRunner =
             "org.junit.platform:junit-platform-runner:${Versions.junitPlatformRunner}"
     }
+
     const val commonsCodec =
         "commons-codec:commons-codec:${Versions.commonsCodec}"
     const val livedataTesting =
